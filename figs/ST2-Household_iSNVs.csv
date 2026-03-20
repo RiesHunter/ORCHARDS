@@ -1,0 +1,11 @@
+AA,iSNV,Donor_ID,Recipient_ID,Donor_AF,Recipient_AF,Merge_ID,Ann
+G187G,A594G-NP,Donor 1,Recipient 1a,0.1003,0.1488,18-19_H1N1,synonymous_variant
+T22A,A97G-NP,Donor 1,Recipient 1b,0.242,0.2977,18-19_H1N1,missense_variant
+C471C,C1485T-HA,Donor 1,Recipient 1a,0.3164,0.1427,18-19_H1N1,synonymous_variant
+C471C,C1485T-HA,Donor 1,Recipient 1b,0.3164,0.7063,18-19_H1N1,synonymous_variant
+C471C,C1485T-HA,Donor 1,Recipient 1c,0.3164,0.9991,18-19_H1N1,synonymous_variant
+P627P,C1893T-PB1,Donor 2,Recipient 2,0.1045,0.2876,17-18_H3N2,synonymous_variant
+A270S,G823T-PB2,Donor 3,Recipient 3a,0.6047,0.1471,17-18_H1N1,missense_variant
+A270S,G823T-PB2,Donor 3,Recipient 3b,0.6047,0.058,17-18_H1N1,missense_variant
+N346N,T1050C-PB1,Donor 4,Recipient 4,0.5705,0.761,18-19_H1N1,synonymous_variant
+I185T,T626C-HA,Donor 5,Recipient 5,0.3767,1,18-19_H1N1,missense_variant

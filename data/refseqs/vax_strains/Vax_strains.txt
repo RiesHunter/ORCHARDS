@@ -1,0 +1,7 @@
+2017-18 vaccine
+ - (H1N1) A/Michigan/45/2015 (EPI_ISL_208220)
+ - (H3N2) A/Hong Kong/4801/2014
+
+2018-19 vaccine
+ - (H1N1) A/Michigan/45/2015 (EPI_ISL_208220)
+ - (H3N2) A/Singapore/INFIMH-16–0019/2016

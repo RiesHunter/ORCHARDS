@@ -1,0 +1,18 @@
+## Logging in
+ssh hries@submit1.chtc.wisc.edu
+
+## Zipping folders ##
+# (go to computer file directory)
+tar czf NameOfZippedTarball.tar.gz NameOfUnzippedFolder
+
+## Unzipping folders ##
+# (go to CHTC file directory)
+tar xzf NameOfZippedTarball.tar.gz
+
+## Computer --> CHTC ##
+# (go to computer file directory)
+scp file hries@submit1.chtc.wisc.edu:/home/hries/PathToFile
+
+## CHTC --> Computer ##
+# (go to computer file directory)
+scp hries@submit1.chtc.wisc.edu:/home/hries/PathToFile ./

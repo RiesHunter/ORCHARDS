@@ -1,0 +1,15 @@
+## To generate consensus
+## first, do QC with bam_stats.sh on the .BAM files in ./aligned 
+	## see pipeline.txt for more info
+
+1. cd ./consensus/QC_pass
+2. fa-generate_consensus.sh
+4. Jalview
+	a) import each clustalo-${segment}.fa
+	b) right-click "consensus", copy
+	c) paste in consensus-${segment}.fa file
+5. Compile
+	a) change virus headers in script (below) before running
+	a) fa-compile_Jalview_consensus.sh
+6. Throw it in SNIFFLES_v3
+	a) recall normalized reads w/new consensus (e.g., 17-18_H3N3_within-season_consensus.fasta)

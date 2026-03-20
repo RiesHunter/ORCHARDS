@@ -1,0 +1,13 @@
+After making a directory with genes.gtf and sequences.fa:
+gzip *
+cd ../..
+nano snpEff.config
+ # add the following lines:
+   # data.dir = ./data/
+   # RiesHunter_v04.genome: RiesHunter_v04
+
+java -jar snpEff.jar build -noCheckCds -noCheckProtein RiesHunter_v04
+ # RiesHunter_v04 was my directory
+# Now you will have sequence.bin and snpEffectPredictor.bin in your directory
+
+java -jar snpEff.jar ann RiesHunter_v04 compiled.vcf > compiled_ann.vcf

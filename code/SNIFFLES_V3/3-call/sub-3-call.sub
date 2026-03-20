@@ -1,0 +1,41 @@
+## Name and notify
+batch_name   = "tcflab"
+notification = Error
+notify_user  = hries@wisc.edu
+
+## Resource request
+request_cpus   = 1
+request_memory = 10GB
+request_disk   = 5GB
+request_gpus   = 1
++WantGPULab    = true
++GPUJobLength  = "short"
+
+## Universe
+universe            = docker
+docker_image        = rieshunter/tcflab:v2.04
+docker_network_type = host
+
+## Debugging
+log    = 01-$(Cluster)_$(Process)_log
+output = 02-$(Cluster)_$(Process)_output
+error  = 03-$(Cluster)_$(Process)_error
+
+## File transfer
+when_to_transfer_output = ON_EXIT
+should_transfer_files   = YES
+environment             = state=$(state)
+
+## Manifest
+transfer_input_files    = $(state)_normalized.fastq.gz,$(state)_R1_normalized.fastq.gz,$(state)_R2_normalized.fastq.gz,/home/hries/SNIFFLES_V3/refseqs/H3N2-A_Singapore_INFIMH-16-0019_2016.fasta
+arguments               = $(state)
+executable              = sh_SNIFFLES-3-call.sh
+environment             = state=$(state);ref=H3N2-A_Singapore_INFIMH-16-0019_2016.fasta
+
+queue state from states.txt
+
+
+## refseqs
+# 17-18: H3N2-A_Hong_Kong_4801_2014.fasta
+# 18-19: H3N2-A_Singapore_INFIMH-16-0019_2016.fasta
+#  H1N1: H1N1-A_Michigan_45_2015.fasta

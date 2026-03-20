@@ -1,0 +1,36 @@
+## preprocess
+batch_name   = "tcflab"
+notification = Error
+notify_user  = hries@wisc.edu
+
+## Resources
+request_cpus   = 1
+request_memory = 10GB
+request_disk   = 5GB
+request_gpus   = 1
++WantGPULab    = true
++GPUJobLength  = "short"
+
+## Script
+universe            = docker
+docker_image        = rieshunter/tcflab:v2.04
+docker_network_type = host
+executable          = sh_SNIFFLES-1-preprocess.sh
+
+## Debugging
+log    = 01-$(Cluster)_$(Process)_log
+output = 02-$(Cluster)_$(Process)_output
+error  = 03-$(Cluster)_$(Process)_error
+
+## File transfer
+when_to_transfer_output = ON_EXIT
+should_transfer_files   = YES
+environment             = state=$(state)
+
+## Manifest
+transfer_input_files    = $(state)_R1.fastq.gz,$(state)_R2.fastq.gz
+arguments               = $(state)
+executable              = sh_SNIFFLES-1-preprocess.sh
+environment             = state=$(state)
+
+queue state from states.txt

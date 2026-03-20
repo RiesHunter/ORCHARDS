@@ -1,0 +1,24 @@
+.
+├── code
+│   ├── guides
+│   ├── misc
+│   ├── move_by_subtype
+│   ├── neutral_expectations
+│   ├── ORCHARDS_R
+│   ├── QC
+│   ├── SNIFFLES_V3
+│   │   ├── 1-preprocess
+│   │   ├── 2-normalize
+│   │   ├── 3-call
+│   │   ├── 4-consensus
+│   │   ├── 5-recall
+│   │   ├── reads_format
+│   │   └── refseqs
+│   └── SNPgenie_snpEff_tools
+├── data
+│   ├── _antigenicity
+│   ├── refseqs
+│   │   └── vax_strains
+└── figs
+    └── figures
+        └── _svg

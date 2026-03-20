@@ -1,0 +1,17 @@
+# private data directories and archives
+admin/
+code/archive
+code/ORCHARDS_R/_archive
+data/reads_3
+data/summary
+figs/dfs
+
+# R project files
+.Rproj.user
+.Rproj
+.Rhistory
+
+# Remove .DS_Store (apparently you have to delete old copies)
+## find . -name \*.DS_Store -type f -delete
+.DS_Store
+

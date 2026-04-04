@@ -6,4 +6,4 @@ Influenza viruses undergo antigenic drift, the gradual accumulation of mutations
 Specific files in this repository have been partially redacted to protect sensitive identifiers.
 
 ## Example figure
-[Figure 1](figs/figures/F1-manhattan_spec.png)
+![Figure 1](figs/figures/F1-manhattan_spec.png)
